@@ -10,6 +10,6 @@ Kamu bebas menggunakan ini sebagai standar tema atau referensi untuk blog kamu, 
 
 desain blog saya menggunakan tema dari [Github Panr](https://github.com/panr/hugo-theme-terminal) dan sedikit kustomisasi dari [Bootstrap v4.x](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 
-# Buy me a es campur
+# Buy me a es candy
 
 <a href="https://trakteer.id/luxfield"><img src="https://cdn.trakteer.id/images/mix/trakteer-icon.png" alt="trakeer.id" width="50"/></a>
