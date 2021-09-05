@@ -12,4 +12,4 @@ desain blog saya menggunakan tema dari [Github Panr](https://github.com/panr/hug
 
 # Buy me a es campur
 
-<a href="https://trakteer.id/luxfield"><img src="https://cdn.trakteer.id/images/mix/trakteer-icon.png" alt="trakeer.id" width="200"/></a>
+<a href="https://trakteer.id/luxfield"><img src="https://cdn.trakteer.id/images/mix/trakteer-icon.png" alt="trakeer.id" width="50"/></a>
