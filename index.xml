@@ -12,7 +12,7 @@ Peringatan debugger memperbolehkan menjalankan kode python dari browser, itu ter
 &lt;input id="1" type="checkbox" checked />
 &lt;label for="1">
 &lt;span class="collapsable-code__language">bash&lt;/span>
-&lt;span class="collapsable-code__toggle" data-label-expand="Show" data-label-collapse="Hide">&lt;/span>
+&lt;span class="collapsable-code__toggle" data-label-expand="Tampilkan" data-label-collapse="Hide">&lt;/span>
 &lt;/label>
 &lt;pre class="language-bash" >&lt;code>
 $ export FLASK_ENV=development
@@ -23,7 +23,7 @@ $ flask run
 &lt;input id="2" type="checkbox" checked />
 &lt;label for="2">
 &lt;span class="collapsable-code__language">CMD&lt;/span>
-&lt;span class="collapsable-code__toggle" data-label-expand="Show" data-label-collapse="Hide">&lt;/span>
+&lt;span class="collapsable-code__toggle" data-label-expand="Tampilkan" data-label-collapse="Hide">&lt;/span>
 &lt;/label>
 &lt;pre class="language-CMD" >&lt;code>
 &amp;gt; set FLASK_ENV=development
@@ -34,7 +34,7 @@ $ flask run
 &lt;input id="3" type="checkbox" checked />
 &lt;label for="3">
 &lt;span class="collapsable-code__language">Powershell&lt;/span>
-&lt;span class="collapsable-code__toggle" data-label-expand="Show" data-label-collapse="Hide">&lt;/span>
+&lt;span class="collapsable-code__toggle" data-label-expand="Tampilkan" data-label-collapse="Hide">&lt;/span>
 &lt;/label>
 &lt;pre class="language-Powershell" >&lt;code>
 &amp;gt; $env:FLASK_ENV = &amp;#34;development&amp;#34;
