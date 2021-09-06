@@ -28,6 +28,7 @@
 <body class=green>
 <div class="container center headings--one-size">
 <header class=header>
+<script src=https://stiobhart.net/download/isso/embed.min.js></script>
 <div class=header__inner>
 <div class=header__logo>
 <a href=/>
@@ -48,14 +49,13 @@ lightning-x
 </span>
 <span class=post-author>:: Surya Efendi</span>
 </div>
-<div class=post-content>
-<div id=container-5fb049130f5ac4c9ac0b578322ca4faf></div><div>
+<div class=post-content><div>
 <h2 id=deskripsi>Deskripsi<a href=#deskripsi class=hanchor arialabel=Anchor>&#8983;</a> </h2>
 <p>Fungsi callable pada python akan mengembalikan nilai <code>True</code> jika objek yang menjadi argumennya dapat dipanggil, jika tidak maka akan mengembalikan nilai <code>False</code></p>
 <hr>
 <h2 id=syntax>Syntax<a href=#syntax class=hanchor arialabel=Anchor>&#8983;</a> </h2>
 <p>Fungsi callable() memiliki sintaks sebagai berikut:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>callable(object)
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=n>callable</span><span class=p>(</span><span class=nb>object</span><span class=p>)</span>
 </code></pre></div><hr>
 <h2 id=parameter>Parameter<a href=#parameter class=hanchor arialabel=Anchor>&#8983;</a> </h2>
 <ul>
@@ -75,28 +75,29 @@ lightning-x
 </blockquote>
 <hr>
 <h2 id=contoh>Contoh<a href=#contoh class=hanchor arialabel=Anchor>&#8983;</a> </h2>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>a:int <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>
-print(callable(x))
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=n>a</span><span class=p>:</span><span class=nb>int</span> <span class=o>=</span> <span class=mi>10</span>
+<span class=nb>print</span><span class=p>(</span><span class=n>callable</span><span class=p>(</span><span class=n>x</span><span class=p>))</span>
 
-<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>hello</span>()<span style=color:#f92672>-&gt;</span><span style=color:#66d9ef>None</span>:
-    print(<span style=color:#e6db74>&#34;Hello World&#34;</span>)
+<span class=k>def</span> <span class=nf>hello</span><span class=p>()</span><span class=o>-&gt;</span><span class=kc>None</span><span class=p>:</span>
+    <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Hello World&#34;</span><span class=p>)</span>
 
-b <span style=color:#f92672>=</span> hello
-print(callable(b))
+<span class=n>b</span> <span class=o>=</span> <span class=n>hello</span>
+<span class=nb>print</span><span class=p>(</span><span class=n>callable</span><span class=p>(</span><span class=n>b</span><span class=p>))</span>
 
-<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>kelas</span>:
-    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>fungsi</span>()<span style=color:#f92672>-&gt;</span><span style=color:#66d9ef>None</span>:
-        print(<span style=color:#e6db74>&#34;Hello World&#34;</span>)
+<span class=k>class</span> <span class=nc>kelas</span><span class=p>:</span>
+    <span class=k>def</span> <span class=nf>fungsi</span><span class=p>()</span><span class=o>-&gt;</span><span class=kc>None</span><span class=p>:</span>
+        <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Hello World&#34;</span><span class=p>)</span>
 
-print(callable(kelas))
+<span class=nb>print</span><span class=p>(</span><span class=n>callable</span><span class=p>(</span><span class=n>kelas</span><span class=p>))</span>
 </code></pre></div><hr>
 <p>Output</p>
 <p>Output dari program di atas adalah seperti berikut:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>False</span>
-<span style=color:#66d9ef>True</span>
-<span style=color:#66d9ef>True</span>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=kc>False</span>
+<span class=kc>True</span>
+<span class=kc>True</span>
 </code></pre></div>
 </div></div>
+<div id=container-5fb049130f5ac4c9ac0b578322ca4faf></div>
 <div class=pagination>
 <div class=pagination__title>
 <span class=pagination__title-h>Baca Artikel lainnya</span>
@@ -117,6 +118,8 @@ print(callable(kelas))
 </span>
 </div>
 </div>
+<section id=isso-thread>
+</section>
 </div>
 </div>
 <footer class=footer>
