@@ -45,12 +45,26 @@ $ flask run
 &lt;p>Lihat Juga:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="https://flask.palletsprojects.com/en/2.0.x/server/" onclick="window.open('https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b','_blank');" target="_blank">Development Server&lt;/a> dan &lt;a href="https://flask.palletsprojects.com/en/2.0.x/cli/" onclick="window.open('https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b','_blank');" target="_blank">Command Line Interface&lt;/a> untuk informasi tentang menjalankan web pada mode development
+&lt;p>
+&lt;a href='https://flask.palletsprojects.com/en/2.0.x/server/'
+onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
+target="_blank"
+>
+Development Server
+&lt;/a>
+dan
+&lt;a href='https://flask.palletsprojects.com/en/2.0.x/cli/'
+onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
+target="_blank"
+>
+Command Line Interface
+&lt;/a>
+untuk informasi tentang menjalankan web pada mode development&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;a href="https://flask.palletsprojects.com/en/2.0.x/debugging/" onclick="window.open('https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b','_blank');" target="_blank">Debugging Application Errors&lt;/a> for information about using the built-in debugger and other debuggers.
+&lt;p>&lt;a href="https://flask.palletsprojects.com/en/2.0.x/debugging/" onclick="window.open('https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b','_blank');" target="_blank">Debugging Application Errors&lt;/a> for information about using the built-in debugger and other debuggers.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;a href="https://flask.palletsprojects.com/en/2.0.x/logging/" onclick="window.open('https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b','_blank');" target="_blank">Logging&lt;/a> dan &lt;a href="https://flask.palletsprojects.com/en/2.0.x/errorhandling/" onclick="window.open('https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b','_blank');" target="_blank">Handling Application Errors&lt;/a> to log errors and display nice error pages.
+&lt;p>&lt;a href="https://flask.palletsprojects.com/en/2.0.x/logging/" onclick="window.open('https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b','_blank');" target="_blank">Logging&lt;/a> dan &lt;a href="https://flask.palletsprojects.com/en/2.0.x/errorhandling/" onclick="window.open('https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b','_blank');" target="_blank">Handling Application Errors&lt;/a> to log errors and display nice error pages.&lt;/p>
 &lt;/li>
 &lt;/ul></content></item></channel></rss>
