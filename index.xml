@@ -3,7 +3,14 @@ Pengertian TOC (Table Of Content) TOC (Table of Content) adalah pembuatan daftar
 &lt;h2 id="pengertian-toc-table-of-content">Pengertian TOC (Table Of Content)&lt;/h2>
 &lt;p>TOC (Table of Content) adalah pembuatan daftar isi secara otomatis dan dinamis, pada halaman website biasanya TOC akan terbuat secara otomatis mengikuti heading yang kita buat pada tulisan di halaman tersebut.&lt;/p>
 &lt;p>Contohnya seperti ini:&lt;/p>
-&lt;p>&lt;img src="/img/membuat_toc_hugo/toc.jpg" alt="toc">&lt;/p>
+&lt;figure>
+&lt;picture>
+&lt;source srcset="/img/toc.webp" type="image/webp" defer>
+&lt;source srcset="/img/toc.jpg" type="image/jpeg" >
+&lt;img src="/img/toc.jpg"
+>
+&lt;/picture>
+&lt;/figure>
 &lt;p>Jika salah satu poin pada daftar isinya di klik maka langsung mengarah ke pembahasan tersebut misal kita klik &amp;ldquo;On-Target (T.O.C)&amp;rdquo; maka tampilan halaman pada website akan langsung menampilkan pembahasan tentang &amp;ldquo;On-Target (T.O.C)&amp;rdquo; pada halaman website yang sama.&lt;/p>
 &lt;h2 id="apa-fungsinya-toc">Apa Fungsinya TOC?&lt;/h2>
 &lt;p>Sebagai pemilik website Anda harus memahami karakter pembaca website Anda, tidak semua user suka membaca artikel yang cukup panjang. Mereka biasanya lebih suka membaca hal penting yang mereka cari saja.&lt;/p>
@@ -62,16 +69,36 @@ startLevel = 2
 &lt;p>&lt;strong>Referensi&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;a href="https://gohugo.io/content-management/toc/" onclick="window.open('https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b','_blank');" target="_blank">https://gohugo.io/content-management/toc/&lt;/a>
+&lt;a href='https://gohugo.io/content-management/toc/'
+onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
+target="_blank"
+>
+https://gohugo.io/content-management/toc/
+&lt;/a>
 &lt;/li>
 &lt;li>
-&lt;a href="https://gohugo.io/templates/partials/" onclick="window.open('https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b','_blank');" target="_blank">https://gohugo.io/templates/partials/&lt;/a>
+&lt;a href='https://gohugo.io/templates/partials/'
+onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
+target="_blank"
+>
+https://gohugo.io/templates/partials/
+&lt;/a>
 &lt;/li>
 &lt;li>
-&lt;a href="https://gohugo.io/getting-started/configuration-markup/#table-of-contents" onclick="window.open('https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b','_blank');" target="_blank">https://gohugo.io/getting-started/configuration-markup/#table-of-contents&lt;/a>
+&lt;a href='https://gohugo.io/getting-started/configuration-markup/#table-of-contents'
+onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
+target="_blank"
+>
+https://gohugo.io/getting-started/configuration-markup/#table-of-contents
+&lt;/a>
 &lt;/li>
 &lt;li>
-&lt;a href="https://defriansyah.net/table-of-content/" onclick="window.open('https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b','_blank');" target="_blank">https://defriansyah.net/table-of-content/&lt;/a>
+&lt;a href='https://defriansyah.net/table-of-content/'
+onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
+target="_blank"
+>
+https://defriansyah.net/table-of-content/
+&lt;/a>
 &lt;/li>
 &lt;/ul>
 &lt;hr></content></item><item><title>Mode Debug Flask</title><link>/mode-debug-flask/</link><pubDate>Sun, 05 Sep 2021 14:41:44 +0700</pubDate><guid>/mode-debug-flask/</guid><description>Deskripsi Flask dapat melakukan aksi lebih banyak sekedar hanya menjalankan development server, dengan mengaktifkan debug mode, Flask secara otomatis akan memuat ulang server ketika ada perubahan kode, dan akan menampilkan sebuah debug interaktif pada browser jika ada masalah terjadi saat melakukan permintaan
