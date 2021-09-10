@@ -48,14 +48,14 @@ $ flask run
 &lt;p>
 &lt;a href='https://flask.palletsprojects.com/en/2.0.x/server/'
 onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
-target="_blank"
+target="_blank" rel="noopener"
 >
 Development Server
 &lt;/a>
 dan
 &lt;a href='https://flask.palletsprojects.com/en/2.0.x/cli/'
 onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
-target="_blank"
+target="_blank" rel="noopener"
 >
 Command Line Interface
 &lt;/a>

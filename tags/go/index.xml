@@ -70,7 +70,7 @@ startLevel = 2
 &lt;li>
 &lt;a href='https://gohugo.io/content-management/toc/'
 onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
-target="_blank"
+target="_blank" rel="noopener"
 >
 https://gohugo.io/content-management/toc/
 &lt;/a>
@@ -78,7 +78,7 @@ https://gohugo.io/content-management/toc/
 &lt;li>
 &lt;a href='https://gohugo.io/templates/partials/'
 onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
-target="_blank"
+target="_blank" rel="noopener"
 >
 https://gohugo.io/templates/partials/
 &lt;/a>
@@ -86,7 +86,7 @@ https://gohugo.io/templates/partials/
 &lt;li>
 &lt;a href='https://gohugo.io/getting-started/configuration-markup/#table-of-contents'
 onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
-target="_blank"
+target="_blank" rel="noopener"
 >
 https://gohugo.io/getting-started/configuration-markup/#table-of-contents
 &lt;/a>
@@ -94,7 +94,7 @@ https://gohugo.io/getting-started/configuration-markup/#table-of-contents
 &lt;li>
 &lt;a href='https://defriansyah.net/table-of-content/'
 onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
-target="_blank"
+target="_blank" rel="noopener"
 >
 https://defriansyah.net/table-of-content/
 &lt;/a>
