@@ -7,6 +7,7 @@ Pengertian TOC (Table Of Content) TOC (Table of Content) adalah pembuatan daftar
 &lt;source type="image/webp" srcset="/img/toc_hu9abbd3abd5fe060e6d02f67d7bc4e650_16912_300x0_resize_q75_h2_box.webp">
 &lt;source type="image/jpeg" srcset="/img/toc.jpg">
 &lt;img src="/img/toc.jpg"
+alt=""
 >
 &lt;/picture>
 &lt;p>Jika salah satu poin pada daftar isinya di klik maka langsung mengarah ke pembahasan tersebut misal kita klik &amp;ldquo;On-Target (T.O.C)&amp;rdquo; maka tampilan halaman pada website akan langsung menampilkan pembahasan tentang &amp;ldquo;On-Target (T.O.C)&amp;rdquo; pada halaman website yang sama.&lt;/p>
