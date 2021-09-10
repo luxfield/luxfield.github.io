@@ -3,14 +3,12 @@ Pengertian TOC (Table Of Content) TOC (Table of Content) adalah pembuatan daftar
 &lt;h2 id="pengertian-toc-table-of-content">Pengertian TOC (Table Of Content)&lt;/h2>
 &lt;p>TOC (Table of Content) adalah pembuatan daftar isi secara otomatis dan dinamis, pada halaman website biasanya TOC akan terbuat secara otomatis mengikuti heading yang kita buat pada tulisan di halaman tersebut.&lt;/p>
 &lt;p>Contohnya seperti ini:&lt;/p>
-&lt;figure>
 &lt;picture>
-&lt;source srcset="/img/toc.webp" type="image/webp" defer>
-&lt;source srcset="/img/toc.jpg" type="image/jpeg" >
+&lt;source type="image/webp" srcset="/img/toc_hu9abbd3abd5fe060e6d02f67d7bc4e650_16912_300x0_resize_q75_h2_box.webp">
+&lt;source type="image/jpeg" srcset="/img/toc.jpg">
 &lt;img src="/img/toc.jpg"
 >
 &lt;/picture>
-&lt;/figure>
 &lt;p>Jika salah satu poin pada daftar isinya di klik maka langsung mengarah ke pembahasan tersebut misal kita klik &amp;ldquo;On-Target (T.O.C)&amp;rdquo; maka tampilan halaman pada website akan langsung menampilkan pembahasan tentang &amp;ldquo;On-Target (T.O.C)&amp;rdquo; pada halaman website yang sama.&lt;/p>
 &lt;h2 id="apa-fungsinya-toc">Apa Fungsinya TOC?&lt;/h2>
 &lt;p>Sebagai pemilik website Anda harus memahami karakter pembaca website Anda, tidak semua user suka membaca artikel yang cukup panjang. Mereka biasanya lebih suka membaca hal penting yang mereka cari saja.&lt;/p>
