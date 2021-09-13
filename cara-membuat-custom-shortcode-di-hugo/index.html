@@ -1,0 +1,199 @@
+<!doctype html><html lang=en>
+<head>
+<title>Cara membuat custom shortcode di Hugo :: lightning-x</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="di Hugo untuk membuat postingan pasti menggunakan markdown style, karena file-nya ditulis dengan format markdown, lalu kalian apabila ingin menambahkan syntax html di markdown tidak bisa di render menjadi html, karena bukan markdown style,">
+<meta name=keywords content>
+<meta name=robots content="noodp">
+<link rel=canonical href=/cara-membuat-custom-shortcode-di-hugo/>
+<script data-ad-client=ca-pub-1304367022632325 async src=https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-77722104-1','auto'),ga('send','pageview'))</script>
+<link rel=preload href=/css/style.min.2e93d73be86f59fa9bc1ecc875238c963f9f6158097e8cb9946a31c99bd3a968.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<noscript><link rel=stylesheet href=/css/style.min.2e93d73be86f59fa9bc1ecc875238c963f9f6158097e8cb9946a31c99bd3a968.css></noscript>
+<link rel=preload href=/css/styles.min.5a237f84c3f4fb520faabe7e12d508743b0e1ef5f61dd23b0742a8c5414135e2.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<noscript><link rel=stylesheet href=/css/styles.min.5a237f84c3f4fb520faabe7e12d508743b0e1ef5f61dd23b0742a8c5414135e2.css></noscript>
+<link rel=preload href=/css/green.min.bc9e6d1661933d9b9ed4846ee57fad5d0e41a393425dd9bf589a1d5f66fd8670.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<noscript><link rel=stylesheet href=/css/green.min.bc9e6d1661933d9b9ed4846ee57fad5d0e41a393425dd9bf589a1d5f66fd8670.css></noscript>
+<link rel=preload href=/css/cookie.min.bf148491dcf0465f2705360688a1f12862dae8d866f3928b0e8197b542deb233.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<noscript><link rel=stylesheet href=/css/cookie.min.bf148491dcf0465f2705360688a1f12862dae8d866f3928b0e8197b542deb233.css></noscript>
+<link rel=apple-touch-icon href=/img/apple-touch-icon-192x192.png>
+<link rel="shortcut icon" href=/img/favicon/green.png>
+<meta name=twitter:card content="summary">
+<meta name=twitter:site content="uyhaa_zxcf">
+<meta name=twitter:creator content="Surya Efendi">
+<meta property="og:locale" content="en">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cara membuat custom shortcode di Hugo">
+<meta property="og:description" content="di Hugo untuk membuat postingan pasti menggunakan markdown style, karena file-nya ditulis dengan format markdown, lalu kalian apabila ingin menambahkan syntax html di markdown tidak bisa di render menjadi html, karena bukan markdown style,">
+<meta property="og:url" content="/cara-membuat-custom-shortcode-di-hugo/">
+<meta property="og:site_name" content="lightning-x">
+<meta property="og:image" content="/img/hugo-shortcode_hua1a92c88ac3cb256bc8463a28c2c0788_40950_1200x630_resize_box_3.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="600">
+<meta property="article:published_time" content="2021-09-13 19:16:27 +0700 +07">
+<meta property="article:tag" content="Hugo">
+<meta property="article:tag" content="GoLang">
+<meta property="article:tag" content="web">
+<meta property="article:tag" content="SSG">
+<meta property="article:author" content="https://www.facebook.com/abcdeg.maas">
+<meta property="article:publisher" content="https://www.facebook.com/abcdeg.maas">
+<meta property="article:section" content="post">
+</head>
+<body class=green>
+<div class="container center headings--one-size">
+<header class=header>
+<div class=header__inner>
+<div class=header__logo>
+<a href=/>
+<div class=logo>
+lightning-x
+</div>
+</a>
+</div>
+</div>
+</header>
+<div class=content>
+<div class=post>
+<h1 class=post-title>
+<a href=/cara-membuat-custom-shortcode-di-hugo/>Cara membuat custom shortcode di Hugo</a></h1>
+<div class=post-meta>
+<span class=post-date>
+2021-09-13
+</span>
+<span class=post-author>:: Surya Efendi</span>
+</div>
+<span class=post-tags>
+#<a href=/tags/hugo/>Hugo</a>&nbsp;
+#<a href=/tags/golang/>GoLang</a>&nbsp;
+#<a href=/tags/web/>web</a>&nbsp;
+#<a href=/tags/ssg/>SSG</a>&nbsp;
+</span>
+<picture>
+<source type=image/webp srcset=/img/hugo-shortcode_hua1a92c88ac3cb256bc8463a28c2c0788_40950_1200x630_resize_q50_h2_box_3.webp>
+<source type=image/jpeg srcset=/img/hugo-shortcode_hua1a92c88ac3cb256bc8463a28c2c0788_40950_1200x630_resize_q50_bgffffff_box_3.jpg>
+<img src=/img/hugo-shortcode.png alt class=img-fluid width=1200 height=630>
+</picture>
+<div class=table-of-contents>
+<h2>
+Daftar Isi
+</h2>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#shortcode-hugo>Shortcode Hugo</a></li>
+<li><a href=#lokasi-file-shortcode>Lokasi File Shortcode</a>
+<ul>
+<li><a href=#root-folder>Root folder</a></li>
+<li><a href=#subfolder-shortcode>Subfolder shortcode</a></li>
+</ul>
+</li>
+<li><a href=#susunan-tepmlate-shortcode-hugo>Susunan Tepmlate Shortcode Hugo</a></li>
+<li><a href=#posisional-argument-dan-named-parameter>Posisional Argument dan Named Parameter</a>
+<ul>
+<li><a href=#posisional-argumen>Posisional argumen</a></li>
+<li><a href=#named-parameter>Named Parameter</a></li>
+<li><a href=#positional-or-named-parameters>Positional or named parameters</a></li>
+</ul>
+</li>
+<li><a href=#mengambil-parameter>Mengambil Parameter</a>
+<ul>
+<li><a href=#mengambil-parameter-dengan-named-parameter>Mengambil Parameter dengan named Parameter</a></li>
+<li><a href=#mengambil-parameter-dengan-posisional-parameter>Mengambil Parameter dengan posisional Parameter</a></li>
+</ul>
+</li>
+<li><a href=#kesimpulan>Kesimpulan</a></li>
+</ul>
+</nav>
+</div>
+<div class=post-content>
+<div>
+<p><em><strong>Cara membuat custom shortcode di Hugo</strong></em> - di Hugo untuk membuat postingan pasti menggunakan markdown style, karena file-nya ditulis dengan format markdown, lalu kalian apabila ingin menambahkan syntax html di markdown tidak bisa di render menjadi html, karena bukan markdown style,</p>
+<h2 id=shortcode-hugo>Shortcode Hugo<a href=#shortcode-hugo class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p>untuk itu hugo menawarkan fitur <code>shortcode</code> untuk menambahkan syntax html didalam markdown, namun <code>shortcode</code> bawaan Hugo ini terbatas, hanya syntax tertentu yang ada di <code>shortcode</code> bawaan Hugo, untuk itu kita coba buat custom <code>shortcode</code> sendiri</p>
+<h2 id=lokasi-file-shortcode>Lokasi File Shortcode<a href=#lokasi-file-shortcode class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<h3 id=root-folder>Root folder<a href=#root-folder class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<p>untuk membuat sebuah shortcode, buat file html dengan nama bebas di <code>layouts/shortcodes/namafile.html</code> kemudian untuk memanggil file shortcode cukup mudah dengan mengetik :</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=p>{{</span><span class=o>-</span> <span class=p>&lt;</span><span class=nx>namafile</span><span class=p>&gt;</span> <span class=p>}}</span>
+</code></pre></div><h3 id=subfolder-shortcode>Subfolder shortcode<a href=#subfolder-shortcode class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<p>kamu bisa mengelompokkan shortcode kamu menggunakan subfolder contohnya <code>layouts/shortcodes/namafolder/namafile.html</code></p>
+<p>kemudian untuk memanggil file shortcode cukup mudah dengan mengetik :</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=p>{{</span><span class=o>-</span> <span class=p>&lt;</span> <span class=nx>namafolder</span><span class=o>/</span><span class=nx>namafile</span> <span class=p>&gt;</span> <span class=p>}}</span>
+</code></pre></div><h2 id=susunan-tepmlate-shortcode-hugo>Susunan Tepmlate Shortcode Hugo<a href=#susunan-tepmlate-shortcode-hugo class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p>Susunan Template Shortcode di Hugo yaitu :</p>
+<ol>
+<li><code>/layouts/shortcodes/&lt;SHORTCODE>.html</code></li>
+<li><code>/themes/&lt;THEME>/layouts/shortcodes/&lt;SHORTCODE>.html</code></li>
+</ol>
+<p>Jadi shortcode akan dijalankan sesuai urutan diatas, apabila shortcode dipanggil maka Hugo akan mencari shortcode di folder projek kita terlebih dahulu kemudian, jika nggak ada maka akan mencari ke tema yang terinstal di projek kita</p>
+<h2 id=posisional-argument-dan-named-parameter>Posisional Argument dan Named Parameter<a href=#posisional-argument-dan-named-parameter class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p>kamu bisa membuat Shortcode dengan mengikuti tipe Parameter :</p>
+<ul>
+<li>Positional parameters</li>
+<li>Named parameters</li>
+<li>Positional or named parameters</li>
+</ul>
+<h3 id=posisional-argumen>Posisional argumen<a href=#posisional-argumen class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<p>pada shortcode untuk memberi sebuah argumen bisa tanpa menggunakan named Parameter, contohnya seperti ini :</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=p>{{</span><span class=o>-</span> <span class=p>&lt;</span> <span class=nx>gambar</span> <span class=err>&#39;</span><span class=nx>link</span><span class=o>/</span><span class=nx>to</span><span class=o>/</span><span class=nx>path</span><span class=o>/</span><span class=nx>image</span><span class=p>.</span><span class=nx>jpg</span><span class=err>&#39;</span> <span class=p>&gt;</span> <span class=p>}}</span>
+</code></pre></div><h3 id=named-parameter>Named Parameter<a href=#named-parameter class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<p>pada shortcode untuk memberi sebuah argumen menggunakan named Parameter, contohnya seperti ini :</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=p>{{</span><span class=o>-</span> <span class=p>&lt;</span> <span class=nx>gambar</span> <span class=nx>src</span><span class=p>=</span><span class=err>&#39;</span><span class=nx>link</span><span class=o>/</span><span class=nx>to</span><span class=o>/</span><span class=nx>path</span><span class=o>/</span><span class=nx>image</span><span class=p>.</span><span class=nx>jpg</span><span class=err>&#39;</span> <span class=p>&gt;</span> <span class=p>}}</span>
+</code></pre></div><h3 id=positional-or-named-parameters>Positional or named parameters<a href=#positional-or-named-parameters class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<p>pada shortcode untuk memberi sebuah argumen menggunakan named Parameter dan juga tanpa parameter secara bersamaan, contohnya seperti ini :</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=p>{{</span><span class=o>-</span> <span class=p>&lt;</span> <span class=nx>gambar</span> <span class=nx>src</span><span class=p>=</span><span class=err>&#39;</span><span class=nx>link</span><span class=o>/</span><span class=nx>to</span><span class=o>/</span><span class=nx>path</span><span class=o>/</span><span class=nx>image</span><span class=p>.</span><span class=nx>jpg</span><span class=sc>&#39; &#39;</span><span class=nx>gambar</span><span class=err>&#39;</span> <span class=p>&gt;</span> <span class=p>}}</span>
+</code></pre></div><h2 id=mengambil-parameter>Mengambil Parameter<a href=#mengambil-parameter class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p>Semua parameter pada Shortcode bisa diakses lewat method <code>.Get</code> , meskipun tanpa paramater atau dengan parameter</p>
+<h3 id=mengambil-parameter-dengan-named-parameter>Mengambil Parameter dengan named Parameter<a href=#mengambil-parameter-dengan-named-parameter class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<p>Untuk mengambil parameter dengan nama, gunakan method <code>.Get</code> kemudian diikuti dengan nama parameter yang diapit 2 kutip</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=p>{{</span><span class=o>-</span> <span class=p>.</span><span class=nx>Get</span> <span class=s>&#34;src&#34;</span> <span class=p>}}</span>
+</code></pre></div><h3 id=mengambil-parameter-dengan-posisional-parameter>Mengambil Parameter dengan posisional Parameter<a href=#mengambil-parameter-dengan-posisional-parameter class=hanchor arialabel=Anchor>&#8983;</a> </h3>
+<p>Untuk mengambil parameter tanpa nama, gunakan method <code>.Get</code> kemudian diikuti dengan nomor (nomor dimulai dari 0)</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=p>{{</span><span class=o>-</span> <span class=p>.</span><span class=nx>Get</span> <span class=mi>0</span> <span class=p>}}</span>
+</code></pre></div><h2 id=kesimpulan>Kesimpulan<a href=#kesimpulan class=hanchor arialabel=Anchor>&#8983;</a> </h2>
+<p>Begitulah cara membuat shortcode di Hugo, kurang lebihnya mohon maaf, sampai jumpa dia artikel berikutnya~~</p>
+<p><strong>Referensi</strong></p>
+<ul>
+<li>
+<a href=https://gohugo.io/content-management/shortcodes/ onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank")' target=_blank rel=noopener>
+https://gohugo.io/content-management/shortcodes/
+</a>
+</li>
+<li>
+<a href=https://gohugo.io/templates/shortcode-templates/ onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank")' target=_blank rel=noopener>
+https://gohugo.io/templates/shortcode-templates/
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div id=container-5fb049130f5ac4c9ac0b578322ca4faf></div>
+<div class=pagination>
+<div class=pagination__title>
+<span class=pagination__title-h>Baca Artikel lainnya</span>
+<hr>
+</div>
+<div class=pagination__buttons>
+<span class="button next">
+<a href=/cara-membuat-toc-secara-otomatis-di-hugo/>
+<span class=button__text>Cara Membuat TOC secara otomatis di Hugo</span>
+<span class=button__icon>→</span>
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<footer class=footer>
+<div class=footer__inner>
+<div class=copyright>
+<span>© 2021 ligtning-x | Diberdayakan oleh <a href=http://gohugo.io>Hugo v0.88.0-DEV</a></span>
+</div>
+</div>
+</footer>
+<script src=/js/cookie.min.be3360dddb9fa0292d6f2f6374b66593fab67f7eea2d7a6b35cf555423013c08ad3c0485fa8de7c42101b987ad4aad984f128b6b52e642e433284ad6da88226e.js integrity="sha512-vjNg3dufoCktby9jdLZlk/q2f37qLXprNc9VVCMBPAitPASF+o3nxCEBuYetSq2YTxKLa1LmQuQzKErW2ogibg=="></script>
+<script src=/js/main.min.f78afa5390f16262cfb40170ca84cd1b0fde8fc91be5bddadfb6c21225cb89aa20cb91d90c9ec2f45de73b898ce25c01fd77252e7742d1a662cd773eddfaa1f9.js integrity="sha512-94r6U5DxYmLPtAFwyoTNGw/ej8kb5b3a37bCEiXLiaogy5HZDJ7C9F3nO4mM4lwB/XclLndC0aZizXc+3fqh+Q=="></script>
+<script src=/js/prism.min.cc543b12bfc045a9d57140c054988e135109972b6355fd0d801c670804ae9d9246dc77bfaaee9730f531330c18dceaef4c9d9dd6cef0092e13585b0d51e3c483.js integrity="sha512-zFQ7Er/ARanVcUDAVJiOE1EJlytjVf0NgBxnCASunZJG3He/qu6XMPUxMwwY3OrvTJ2d1s7wCS4TWFsNUePEgw=="></script>
+<script async data-cfasync=false src=//pl16576237.effectivecpmgate.com/5fb049130f5ac4c9ac0b578322ca4faf/invoke.js></script>
+</div>
+</body>
+</html>

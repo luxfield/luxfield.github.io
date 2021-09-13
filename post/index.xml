@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on lightning-x</title><link>/post/</link><description>Recent content in Posts on lightning-x</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 06 Sep 2021 18:18:35 +0700</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Cara Membuat TOC secara otomatis di Hugo</title><link>/cara-membuat-toc-secara-otomatis-di-hugo/</link><pubDate>Mon, 06 Sep 2021 18:18:35 +0700</pubDate><guid>/cara-membuat-toc-secara-otomatis-di-hugo/</guid><description>Cara Membuat TOC di Hugo - Kalian pasti sering lihat di sebuah blog ada sebuah TOC (Table of Content) atau daftar isi, didalam daftar isi banyak judul-judul/bagian-bagian didalam sebuah blog, sebenarnya daftar isi itu buat apa sih ? dan gunanya TOC di Hugo itu apa ?.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on lightning-x</title><link>/post/</link><description>Recent content in Posts on lightning-x</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Sep 2021 19:16:27 +0700</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Cara membuat custom shortcode di Hugo</title><link>/cara-membuat-custom-shortcode-di-hugo/</link><pubDate>Mon, 13 Sep 2021 19:16:27 +0700</pubDate><guid>/cara-membuat-custom-shortcode-di-hugo/</guid><description>Cara membuat custom shortcode di Hugo - di Hugo untuk membuat postingan pasti menggunakan markdown style, karena file-nya ditulis dengan format markdown, lalu kalian apabila ingin menambahkan syntax html di markdown tidak bisa di render menjadi html, karena bukan markdown style,
+Shortcode Hugo untuk itu hugo menawarkan fitur shortcode untuk menambahkan syntax html didalam markdown, namun shortcode bawaan Hugo ini terbatas, hanya syntax tertentu yang ada di shortcode bawaan Hugo, untuk itu kita coba buat custom shortcode sendiri</description><content>&lt;p>&lt;em>&lt;strong>Cara membuat custom shortcode di Hugo&lt;/strong>&lt;/em> - di Hugo untuk membuat postingan pasti menggunakan markdown style, karena file-nya ditulis dengan format markdown, lalu kalian apabila ingin menambahkan syntax html di markdown tidak bisa di render menjadi html, karena bukan markdown style,&lt;/p>
+&lt;h2 id="shortcode-hugo">Shortcode Hugo&lt;/h2>
+&lt;p>untuk itu hugo menawarkan fitur &lt;code>shortcode&lt;/code> untuk menambahkan syntax html didalam markdown, namun &lt;code>shortcode&lt;/code> bawaan Hugo ini terbatas, hanya syntax tertentu yang ada di &lt;code>shortcode&lt;/code> bawaan Hugo, untuk itu kita coba buat custom &lt;code>shortcode&lt;/code> sendiri&lt;/p>
+&lt;h2 id="lokasi-file-shortcode">Lokasi File Shortcode&lt;/h2>
+&lt;h3 id="root-folder">Root folder&lt;/h3>
+&lt;p>untuk membuat sebuah shortcode, buat file html dengan nama bebas di &lt;code>layouts/shortcodes/namafile.html&lt;/code> kemudian untuk memanggil file shortcode cukup mudah dengan mengetik :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nx">namafile&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="subfolder-shortcode">Subfolder shortcode&lt;/h3>
+&lt;p>kamu bisa mengelompokkan shortcode kamu menggunakan subfolder contohnya &lt;code>layouts/shortcodes/namafolder/namafile.html&lt;/code>&lt;/p>
+&lt;p>kemudian untuk memanggil file shortcode cukup mudah dengan mengetik :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nx">namafolder&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">namafile&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="susunan-tepmlate-shortcode-hugo">Susunan Tepmlate Shortcode Hugo&lt;/h2>
+&lt;p>Susunan Template Shortcode di Hugo yaitu :&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>/layouts/shortcodes/&amp;lt;SHORTCODE&amp;gt;.html&lt;/code>&lt;/li>
+&lt;li>&lt;code>/themes/&amp;lt;THEME&amp;gt;/layouts/shortcodes/&amp;lt;SHORTCODE&amp;gt;.html&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>Jadi shortcode akan dijalankan sesuai urutan diatas, apabila shortcode dipanggil maka Hugo akan mencari shortcode di folder projek kita terlebih dahulu kemudian, jika nggak ada maka akan mencari ke tema yang terinstal di projek kita&lt;/p>
+&lt;h2 id="posisional-argument-dan-named-parameter">Posisional Argument dan Named Parameter&lt;/h2>
+&lt;p>kamu bisa membuat Shortcode dengan mengikuti tipe Parameter :&lt;/p>
+&lt;ul>
+&lt;li>Positional parameters&lt;/li>
+&lt;li>Named parameters&lt;/li>
+&lt;li>Positional or named parameters&lt;/li>
+&lt;/ul>
+&lt;h3 id="posisional-argumen">Posisional argumen&lt;/h3>
+&lt;p>pada shortcode untuk memberi sebuah argumen bisa tanpa menggunakan named Parameter, contohnya seperti ini :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nx">gambar&lt;/span> &lt;span class="err">&amp;#39;&lt;/span>&lt;span class="nx">link&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">to&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">path&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">image&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">jpg&lt;/span>&lt;span class="err">&amp;#39;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="named-parameter">Named Parameter&lt;/h3>
+&lt;p>pada shortcode untuk memberi sebuah argumen menggunakan named Parameter, contohnya seperti ini :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nx">gambar&lt;/span> &lt;span class="nx">src&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="err">&amp;#39;&lt;/span>&lt;span class="nx">link&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">to&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">path&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">image&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">jpg&lt;/span>&lt;span class="err">&amp;#39;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="positional-or-named-parameters">Positional or named parameters&lt;/h3>
+&lt;p>pada shortcode untuk memberi sebuah argumen menggunakan named Parameter dan juga tanpa parameter secara bersamaan, contohnya seperti ini :&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nx">gambar&lt;/span> &lt;span class="nx">src&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="err">&amp;#39;&lt;/span>&lt;span class="nx">link&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">to&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">path&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">image&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">jpg&lt;/span>&lt;span class="sc">&amp;#39; &amp;#39;&lt;/span>&lt;span class="nx">gambar&lt;/span>&lt;span class="err">&amp;#39;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="mengambil-parameter">Mengambil Parameter&lt;/h2>
+&lt;p>Semua parameter pada Shortcode bisa diakses lewat method &lt;code>.Get&lt;/code> , meskipun tanpa paramater atau dengan parameter&lt;/p>
+&lt;h3 id="mengambil-parameter-dengan-named-parameter">Mengambil Parameter dengan named Parameter&lt;/h3>
+&lt;p>Untuk mengambil parameter dengan nama, gunakan method &lt;code>.Get&lt;/code> kemudian diikuti dengan nama parameter yang diapit 2 kutip&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="p">.&lt;/span>&lt;span class="nx">Get&lt;/span> &lt;span class="s">&amp;#34;src&amp;#34;&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="mengambil-parameter-dengan-posisional-parameter">Mengambil Parameter dengan posisional Parameter&lt;/h3>
+&lt;p>Untuk mengambil parameter tanpa nama, gunakan method &lt;code>.Get&lt;/code> kemudian diikuti dengan nomor (nomor dimulai dari 0)&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="p">.&lt;/span>&lt;span class="nx">Get&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="kesimpulan">Kesimpulan&lt;/h2>
+&lt;p>Begitulah cara membuat shortcode di Hugo, kurang lebihnya mohon maaf, sampai jumpa dia artikel berikutnya~~&lt;/p>
+&lt;p>&lt;strong>Referensi&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href='https://gohugo.io/content-management/shortcodes/'
+onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
+target="_blank" rel="noopener"
+>
+https://gohugo.io/content-management/shortcodes/
+&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href='https://gohugo.io/templates/shortcode-templates/'
+onclick='window.open("https://www.effectivecpmgate.com/s3in6ahg?key=d097cf9f5c481b2e272dff32038a169b","_blank");'
+target="_blank" rel="noopener"
+>
+https://gohugo.io/templates/shortcode-templates/
+&lt;/a>
+&lt;/li>
+&lt;/ul></content></item><item><title>Cara Membuat TOC secara otomatis di Hugo</title><link>/cara-membuat-toc-secara-otomatis-di-hugo/</link><pubDate>Mon, 06 Sep 2021 18:18:35 +0700</pubDate><guid>/cara-membuat-toc-secara-otomatis-di-hugo/</guid><description>Cara Membuat TOC di Hugo - Kalian pasti sering lihat di sebuah blog ada sebuah TOC (Table of Content) atau daftar isi, didalam daftar isi banyak judul-judul/bagian-bagian didalam sebuah blog, sebenarnya daftar isi itu buat apa sih ? dan gunanya TOC di Hugo itu apa ?.
 Pengertian TOC (Table Of Content) TOC (Table of Content) adalah pembuatan daftar isi secara otomatis dan dinamis, pada halaman website biasanya TOC akan terbuat secara otomatis mengikuti heading yang kita buat pada tulisan di halaman tersebut.</description><content>&lt;p>&lt;strong>Cara Membuat TOC di Hugo&lt;/strong> - Kalian pasti sering lihat di sebuah blog ada sebuah TOC (Table of Content) atau daftar isi, didalam daftar isi banyak judul-judul/bagian-bagian didalam sebuah blog, sebenarnya daftar isi itu buat apa sih ? dan gunanya TOC di Hugo itu apa ?.&lt;/p>
 &lt;h2 id="pengertian-toc-table-of-content">Pengertian TOC (Table Of Content)&lt;/h2>
 &lt;p>TOC (Table of Content) adalah pembuatan daftar isi secara otomatis dan dinamis, pada halaman website biasanya TOC akan terbuat secara otomatis mengikuti heading yang kita buat pada tulisan di halaman tersebut.&lt;/p>
